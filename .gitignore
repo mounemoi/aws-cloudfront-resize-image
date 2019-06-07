@@ -3,6 +3,7 @@
 dist/*.zip
 lambda/origin-response-function/node_modules/
 lambda/origin-response-function/package.json
+lambda/origin-response-function/package-lock.json
 lambda/viewer-request-function/node_modules/
 lambda/viewer-request-function/package.json
-
+lambda/viewer-request-function/package-lock.json
