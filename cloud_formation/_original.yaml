@@ -56,7 +56,7 @@ Resources:
     Properties:
       CodeUri: s3://<code-bucket>/viewer-request-function.zip
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs8.10
       MemorySize: 128
       Timeout: 1
       Role: !GetAtt EdgeLambdaRole.Arn
@@ -72,7 +72,7 @@ Resources:
     Properties:
       CodeUri: s3://<code-bucket>/origin-response-function.zip
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs8.10
       MemorySize: 512
       Timeout: 5
       Role: !GetAtt EdgeLambdaRole.Arn
