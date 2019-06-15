@@ -99,7 +99,12 @@ exports.handler = (event, context, callback) => {
                 callback(null, response);
             })
         .catch( err => {
-            console.log("Exception while reading source image :%j",err);
+            if (err.statusCode == 404){
+                callback(null, response);
+            }
+            else {
+                console.log("Exception while reading source image :%j",err);
+            }
         });
     } // end of if block checking response statusCode
     else {
